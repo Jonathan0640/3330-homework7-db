@@ -104,8 +104,8 @@ $(function () {
     const cardRevenue = $(".revenue-amt");   // this must select the class .revenue-amt, which will affect two elements. So count this 2 times.
     cardRevenue.append(`${revenueAmt}`);
 
-    const cardCustomers = $("#customer-num");
-    cardCustomers.append(`${customerNum}`);
+    // const cardCustomers = $("#customer-num");
+    // cardCustomers.append(`${customerNum}`);
 
     const cardOrders = $("#orders-amt");
     cardOrders.append(`${ordersAmt}`);
