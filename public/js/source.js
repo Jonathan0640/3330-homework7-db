@@ -101,60 +101,65 @@ $(function () {
     const userNameObj = $("#username");
     userNameObj.append(`${username}`);
 
-    const cardRevenue = $(".revenue-amt");   // this must select the class .revenue-amt, which will affect two elements. So count this 2 times.
-    cardRevenue.append(`${revenueAmt}`);
+    //query number 3----------------------------------------------------------
+    // const cardRevenue = $(".revenue-amt");   // this must select the class .revenue-amt, which will affect two elements. So count this 2 times.
+    // cardRevenue.append(`${revenueAmt}`);
 
+    //query number 1------------------------------------------------
     // const cardCustomers = $("#customer-num");
     // cardCustomers.append(`${customerNum}`);
 
-    const cardOrders = $("#orders-amt");
-    cardOrders.append(`${ordersAmt}`);
+    //query number 5---------------------------------------------
+    // const cardOrders = $("#orders-amt");
+    // cardOrders.append(`${ordersAmt}`);
 
-    const cardIssues = $("#issues-amt");
-    cardIssues.append(`${issuesAmt}`);
+    //query number 6---------------------------------------------
+    // const cardIssues = $("#issues-amt");
+    // cardIssues.append(`${issuesAmt}`);
 
-    const notificationNumber = $("#notification-num");
-    notificationNumber.append(`${notifAmt}`);
+    //query number 8---------------------------------------------------------
+    // const notificationNumber = $("#notification-num");
+    // notificationNumber.append(`${notifAmt}`);
 
-    const tableBody = $("#customerTableBody");
+    //query number 2-------------------------------------------------------
+    // const tableBody = $("#customerTableBody");
+    // customers.forEach(customer => {
+    //     const row = $("<tr>");
 
-    customers.forEach(customer => {
-        const row = $("<tr>");
+    //     var statusClass;
+    //         if (customer.status.toLowerCase() === "active"){
+    //             statusClass = "status-active";
+    //         } else {
+    //             statusClass = "status-pending";
+    //         }
+    //     row.html(`
+    //         <td>${customer.name}</td>
+    //         <td>${customer.email}</td>
+    //         <td>
+    //             <span class="status ${statusClass}">
+    //                 ${customer.status}
+    //             </span>
+    //         </td>
+    //         <td>${customer.joined}</td>
+    //     `);
 
-        var statusClass;
-            if (customer.status.toLowerCase() === "active"){
-                statusClass = "status-active";
-            } else {
-                statusClass = "status-pending";
-            }
-        row.html(`
-            <td>${customer.name}</td>
-            <td>${customer.email}</td>
-            <td>
-                <span class="status ${statusClass}">
-                    ${customer.status}
-                </span>
-            </td>
-            <td>${customer.joined}</td>
-        `);
-
-        tableBody.append(row);
-    });
+    //     tableBody.append(row);
+    // });
 
    
-    const salesTableBody = $("#salesTableBody");
+    //query number 4--------------------------------------------------------
+    // const salesTableBody = $("#salesTableBody");
+    // sales.forEach(sale => {
+    //     const row = $("<tr>");
 
-    sales.forEach(sale => {
-        const row = $("<tr>");
+    //     row.html(`
+    //         <td>${sale.product}</td>
+    //         <td>${sale.quantity}</td>
+    //         <td>${sale.revenue}</td>
+    //     `);
 
-        row.html(`
-            <td>${sale.product}</td>
-            <td>${sale.quantity}</td>
-            <td>${sale.revenue}</td>
-        `);
-
-        salesTableBody.append(row);
-    });
+    //     salesTableBody.append(row);
+    // });
 
     const activityList = $("#activity-list");
 
@@ -164,32 +169,31 @@ $(function () {
         activityList.append(li);
     });
 
- 
-    const systemStatusList = $("#system-status-list");
-
-    messages.forEach(msg => {
-        const li = $("<li>");
-        li.html(`${msg.messsage}`);
-        systemStatusList.append(li);
-    });
-
-
-    const notificationsList = $("#notifications-list");
-
-    notifications.forEach(notif => {
-        const li = $("<li>");
-        li.html(`${notif.messsage}`);
-        notificationsList.append(li);
-    });
+    //query number 7----------------------------------------------------
+    // const systemStatusList = $("#system-status-list");
+    // messages.forEach(msg => {
+    //     const li = $("<li>");
+    //     li.html(`${msg.messsage}`);
+    //     systemStatusList.append(li);
+    // });
 
 
-    const tasksList = $("#tasks-list");
+    //query number 9----------------------------------------------------------------------
+    // const notificationsList = $("#notifications-list");
+    // notifications.forEach(notif => {
+    //     const li = $("<li>");
+    //     li.html(`${notif.messsage}`);
+    //     notificationsList.append(li);
+    // });
 
-    tasks.forEach(task => {
-        const li = $("<li>");
-        li.html(`${task.messsage}`);
-        tasksList.append(li);
-    });
+    //query number 10-----------------------------------------------------------------
+    // const tasksList = $("#tasks-list");
+
+    // tasks.forEach(task => {
+    //     const li = $("<li>");
+    //     li.html(`${task.messsage}`);
+    //     tasksList.append(li);
+    // });
 
 
     // All six jQuery UI functions
